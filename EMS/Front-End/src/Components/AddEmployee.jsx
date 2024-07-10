@@ -44,7 +44,7 @@ const AddEmployee = () => {
         if(result.data.Status) {
             navigate('/dashboard/employee')
         } else {
-            alert(result.data.Error)
+            console.log(result.data.Error)
         }
     })
     .catch(err => console.log(err))
